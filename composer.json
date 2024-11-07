@@ -1,0 +1,21 @@
+{
+    "name": "adrie/dev",
+    "description": "Générateur de mot de passe",
+    "type": "project",
+    "license": "Apache",
+    "autoload": {
+        "psr-4": {
+            "Adrie\\Dev\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adrien Meyrand",
+            "email": "adrien.meyrand@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "symfony/var-dumper": "^7.1"
+    }
+}
