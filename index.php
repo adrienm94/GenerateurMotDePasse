@@ -15,7 +15,7 @@ if ($_POST && isset($_POST["length"])) {
     try {
         $length = (int) htmlspecialchars($_POST['length']);
         $characterTypes = $_POST["characters"] ?? []; // équivaut à isset($_POST["characters"]) ? $_POST["characters"] : []
-        $resGeneratePassword = "Mot de passe généré : " . PHP_EOL . PasswordGenerator::generatePassword($characterTypes, $length);
+        $resGeneratePassword = "Mot de passe généré : " . PHP_EOL . PasswordGenerator::generatePassword($length,$characterTypes);
         $checkBoxMessage = "Voici le(s) type(s) de caractère(s) appliqué(s) sur le mot de passe généré : ";
         foreach ($characterTypes as $value) {
             $checkBoxMessage .= " | $value |";

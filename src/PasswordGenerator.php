@@ -17,7 +17,7 @@ class PasswordGenerator
      * @return string Le mot de passe généré.
      * @throws \InvalidArgumentException Si la longueur est inférieure à 4.
      */
-    final public static function generatePassword(array $characterTypes, int $length = 12): string
+    final public static function generatePassword(int $length, array $characterTypes): string
     {
 
         // Si la longueur est nulle ou négative
